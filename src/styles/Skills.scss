@@ -1,0 +1,151 @@
+@import "../global.scss";
+
+.skills{
+    background-color: #a83351;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    @include mobile{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+ 
+    h1.main-title{
+        position: absolute;
+        top: 20px;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+
+        @include mobile{
+            font-size: 30px;
+            text-align: center;
+        }
+
+    }
+
+    span{
+        font-size: 70px;
+        color: white;
+        z-index: 2;
+        position: absolute;
+        cursor: pointer;
+
+        @include mobile{
+            font-size: 40px;
+            color: $mainColor;
+        }
+    }
+
+    span.left{
+        left: 200px;
+        @include mobile{
+            left: 12px
+        }
+    }
+
+    span.right{
+        right: 200px;
+        @include mobile{
+            right: 12px;
+        }
+    }
+
+    .slider{
+        height: 400px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+
+        @include mobile{
+            height: 55vh;
+        }
+
+        .cointainer{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mobile{
+                width: 90vw;
+                margin: 0 5vw;
+                height: 55vh;
+            }
+
+
+            .item{
+                width: 700px;
+                height: 390px;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include mobile{
+                    flex-direction: column;
+                    height: 100%;
+                }
+
+
+
+                .left{
+                    flex: 1;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 30px;
+                        color: #a83351;
+                        margin-bottom: 20px;
+
+                        @include mobile{
+                            font-size: 35px;
+                            margin-top: 40px;
+                        }
+
+                    }
+
+                    p{
+                       margin: 20px;
+                       font-weight: 500;
+                       color: #222;
+                       line-height: 25px;
+                    
+                    }
+                }
+
+                .right{
+                    flex: 1;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include mobile{
+                        height: 90%;
+                    }
+
+                    img{
+                        @include mobile{
+                            height: 90%;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    
+}
