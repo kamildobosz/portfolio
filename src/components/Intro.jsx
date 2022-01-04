@@ -1,5 +1,5 @@
 import "../styles/Intro.scss"
-import Me from "../images/me.png"
+import Me from "../images/photo.png"
 
 const Intro = () => {
     return ( <div className="intro" id="intro">
